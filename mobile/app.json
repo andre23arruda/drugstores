@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Medicine Stock",
+    "slug": "medicine-stock",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3186cc"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3186cc"
+      },
+      "package": "com.andre23arruda.pokedex"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

@@ -1,0 +1,1157 @@
+[
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 1,
+        "fields": {
+            "name": "Ácido Acetil Salicílico (AAS) 100mg",
+            "id_name": "acido_acetil_salicilico_aas_100mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 2,
+        "fields": {
+            "name": "Ácido fólico 5mg",
+            "id_name": "acido_folico_5mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 3,
+        "fields": {
+            "name": "Ácido Valpróico 250mg",
+            "id_name": "acido_valproico_250mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 4,
+        "fields": {
+            "name": "Ácido Valpróico 250mg/5ml",
+            "id_name": "acido_valproico_250mg5ml",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 5,
+        "fields": {
+            "name": "Ácido Valpróico 500mg",
+            "id_name": "acido_valproico_500mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 6,
+        "fields": {
+            "name": "Albendazol 400mg comprimidos",
+            "id_name": "albendazol_400mg_comprimidos",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 7,
+        "fields": {
+            "name": "Alendronato de sódio 70mg",
+            "id_name": "alendronato_de_sodio_70mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 8,
+        "fields": {
+            "name": "Amiodarona  cloridrato 200mg",
+            "id_name": "amiodarona_cloridrato_200mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 9,
+        "fields": {
+            "name": "Amitriptilina  cloridrato 25mg",
+            "id_name": "amitriptilina_cloridrato_25mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 10,
+        "fields": {
+            "name": "Amoxicilina 250mg/5ml (suspensão)",
+            "id_name": "amoxicilina_250mg5ml_suspensao",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 11,
+        "fields": {
+            "name": "Amoxicilina 250mg/5ml + clavulanato de potássio 62 5mg/5ml",
+            "id_name": "amoxicilina_250mg5ml__clavulanato_de_potassio_62_5mg5ml",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 12,
+        "fields": {
+            "name": "Amoxicilina 500mg",
+            "id_name": "amoxicilina_500mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 13,
+        "fields": {
+            "name": "Anlodipino 5mg",
+            "id_name": "anlodipino_5mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 14,
+        "fields": {
+            "name": "Atenolol 50mg",
+            "id_name": "atenolol_50mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 15,
+        "fields": {
+            "name": "Azitromicina 500mg",
+            "id_name": "azitromicina_500mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 16,
+        "fields": {
+            "name": "Azitromicina di-hidratada 200mg/5ml (suspensão)",
+            "id_name": "azitromicina_di-hidratada_200mg5ml_suspensao",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 17,
+        "fields": {
+            "name": "Bromoprida gotas 4mg/ml",
+            "id_name": "bromoprida_gotas_4mgml",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 18,
+        "fields": {
+            "name": "Captopril 25mg",
+            "id_name": "captopril_25mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 19,
+        "fields": {
+            "name": "Carbamapezina 20mg/ml (suspensão)",
+            "id_name": "carbamapezina_20mgml_suspensao",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 20,
+        "fields": {
+            "name": "Carbamazepina 200mg",
+            "id_name": "carbamazepina_200mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 21,
+        "fields": {
+            "name": "Carbonato de Lítio 300mg",
+            "id_name": "carbonato_de_litio_300mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 22,
+        "fields": {
+            "name": "Carvedilol 12,5mg",
+            "id_name": "carvedilol_125mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 23,
+        "fields": {
+            "name": "Carvedilol 3,125mg",
+            "id_name": "carvedilol_3125mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 24,
+        "fields": {
+            "name": "Cefalexina 250mg/5ml (suspensão)",
+            "id_name": "cefalexina_250mg5ml_suspensao",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 25,
+        "fields": {
+            "name": "Cefalexina 500mg",
+            "id_name": "cefalexina_500mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 26,
+        "fields": {
+            "name": "Cetoconazol 200mg",
+            "id_name": "cetoconazol_200mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 27,
+        "fields": {
+            "name": "Cetoconazol 20mg/g (creme)",
+            "id_name": "cetoconazol_20mgg_creme",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 28,
+        "fields": {
+            "name": "Cetoconazol 20mg/g (creme)",
+            "id_name": "cetoconazol_20mgg_creme",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 29,
+        "fields": {
+            "name": "Cetoprofeno 100mg",
+            "id_name": "cetoprofeno_100mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 30,
+        "fields": {
+            "name": "Ciprofloxacino 500mg",
+            "id_name": "ciprofloxacino_500mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 31,
+        "fields": {
+            "name": "Clonazepam 2 5mg/ml",
+            "id_name": "clonazepam_2_5mgml",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 32,
+        "fields": {
+            "name": "Cloreto de sódio 9 0mg/ml + cloreto de benzalcônio 0 1mg/ml",
+            "id_name": "cloreto_de_sodio_9_0mgml__cloreto_de_benzalconio_0_1mgml",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 33,
+        "fields": {
+            "name": "Cloridrato de dorzolamina 2% (colírio)",
+            "id_name": "cloridrato_de_dorzolamina_2_colirio",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 34,
+        "fields": {
+            "name": "Clorpromazina  cloridrato 100mg",
+            "id_name": "clorpromazina_cloridrato_100mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 35,
+        "fields": {
+            "name": "Dexametasona 0 1% (creme)",
+            "id_name": "dexametasona_0_1_creme",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 36,
+        "fields": {
+            "name": "Dexametasona 0 5mg/5ml (xarope)",
+            "id_name": "dexametasona_0_5mg5ml_xarope",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 37,
+        "fields": {
+            "name": "Dexametasona 4mg",
+            "id_name": "dexametasona_4mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 38,
+        "fields": {
+            "name": "Dexclorfeniramina 0 4mg/ml (xarope)",
+            "id_name": "dexclorfeniramina_0_4mgml_xarope",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 39,
+        "fields": {
+            "name": "Dexclorfeniramina 2mg",
+            "id_name": "dexclorfeniramina_2mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 40,
+        "fields": {
+            "name": "Diazepam 10mg",
+            "id_name": "diazepam_10mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 41,
+        "fields": {
+            "name": "Diazepam 5mg",
+            "id_name": "diazepam_5mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 42,
+        "fields": {
+            "name": "Digoxina 0 25mg",
+            "id_name": "digoxina_0_25mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 43,
+        "fields": {
+            "name": "Dipirona sódica 500mg/ml (gotas)",
+            "id_name": "dipirona_sodica_500mgml_gotas",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 44,
+        "fields": {
+            "name": "Doxazosina  mesilato 2mg",
+            "id_name": "doxazosina_mesilato_2mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 45,
+        "fields": {
+            "name": "Enalapril  maleato 10mg",
+            "id_name": "enalapril_maleato_10mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 46,
+        "fields": {
+            "name": "Enalapril  maleato 20mg",
+            "id_name": "enalapril_maleato_20mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 47,
+        "fields": {
+            "name": "Escopolamina  butilbrometo 10mg",
+            "id_name": "escopolamina_butilbrometo_10mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 48,
+        "fields": {
+            "name": "Espironolactona 25mg",
+            "id_name": "espironolactona_25mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 49,
+        "fields": {
+            "name": "Fluconazol 150mg",
+            "id_name": "fluconazol_150mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 50,
+        "fields": {
+            "name": "Fluoxetina  cloridrato 20mg",
+            "id_name": "fluoxetina_cloridrato_20mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 51,
+        "fields": {
+            "name": "Furosemida 40mg",
+            "id_name": "furosemida_40mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 52,
+        "fields": {
+            "name": "Glibenclamida 5mg",
+            "id_name": "glibenclamida_5mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 53,
+        "fields": {
+            "name": "Haloperidol 5mg",
+            "id_name": "haloperidol_5mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 54,
+        "fields": {
+            "name": "Haloperidol decanoato 70 52mg/ml (ampola)",
+            "id_name": "haloperidol_decanoato_70_52mgml_ampola",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 55,
+        "fields": {
+            "name": "Hidroclorotiazida 25mg",
+            "id_name": "hidroclorotiazida_25mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 56,
+        "fields": {
+            "name": "Hidróxido de Alumínio 60mg/ml",
+            "id_name": "hidroxido_de_aluminio_60mgml",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 57,
+        "fields": {
+            "name": "Ibuprofeno 50mg/ml (gotas)",
+            "id_name": "ibuprofeno_50mgml_gotas",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 58,
+        "fields": {
+            "name": "Ibuprofeno 600mg",
+            "id_name": "ibuprofeno_600mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 59,
+        "fields": {
+            "name": "Isossorbida  mononitrato 20mg",
+            "id_name": "isossorbida_mononitrato_20mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 60,
+        "fields": {
+            "name": "Ivermectina 6mg",
+            "id_name": "ivermectina_6mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 61,
+        "fields": {
+            "name": "Latanoprosta (colírio)",
+            "id_name": "latanoprosta_colirio",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 62,
+        "fields": {
+            "name": "Levonorgestrel 0 15mg + etinilestradiol 0 03mg (Ciclo 21)",
+            "id_name": "levonorgestrel_0_15mg__etinilestradiol_0_03mg_ciclo_21",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 63,
+        "fields": {
+            "name": "Levotiroxina sódica 100mcg",
+            "id_name": "levotiroxina_sodica_100mcg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 64,
+        "fields": {
+            "name": "Levotiroxina sódica 25mcg",
+            "id_name": "levotiroxina_sodica_25mcg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 65,
+        "fields": {
+            "name": "Levotiroxina sódica 50mcg",
+            "id_name": "levotiroxina_sodica_50mcg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 66,
+        "fields": {
+            "name": "Loratadina 1mg/ml (xarope)",
+            "id_name": "loratadina_1mgml_xarope",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 67,
+        "fields": {
+            "name": "Losartana potássica 50mg",
+            "id_name": "losartana_potassica_50mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 68,
+        "fields": {
+            "name": "Metformina  cloridrato 500mg",
+            "id_name": "metformina_cloridrato_500mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 69,
+        "fields": {
+            "name": "Metformina  cloridrato 850mg",
+            "id_name": "metformina_cloridrato_850mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 70,
+        "fields": {
+            "name": "Metildopa 250mg",
+            "id_name": "metildopa_250mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 71,
+        "fields": {
+            "name": "Metoclopramida  cloridrato 10mg",
+            "id_name": "metoclopramida_cloridrato_10mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 72,
+        "fields": {
+            "name": "Metoprolol  succinato 25mg",
+            "id_name": "metoprolol_succinato_25mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 73,
+        "fields": {
+            "name": "Metoprolol  succinato 50mg",
+            "id_name": "metoprolol_succinato_50mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 74,
+        "fields": {
+            "name": "Metronidazol 100mg/g (gel vaginal)",
+            "id_name": "metronidazol_100mgg_gel_vaginal",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 75,
+        "fields": {
+            "name": "Metronidazol 250mg",
+            "id_name": "metronidazol_250mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 76,
+        "fields": {
+            "name": "Metronidazol 40mg/ml (suspensão)",
+            "id_name": "metronidazol_40mgml_suspensao",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 77,
+        "fields": {
+            "name": "Miconazol  nitrato 20mg/g creme vaginal",
+            "id_name": "miconazol_nitrato_20mgg_creme_vaginal",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 78,
+        "fields": {
+            "name": "Mikania glomerata - Guaco 35mg/ml (xarope)",
+            "id_name": "mikania_glomerata_-_guaco_35mgml_xarope",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 79,
+        "fields": {
+            "name": "Neomicina  sulfato 5mg/g + bacitracina zíncica 250UI/g (pomada)",
+            "id_name": "neomicina_sulfato_5mgg__bacitracina_zincica_250uig_pomada",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 80,
+        "fields": {
+            "name": "Nifedipino 20mg",
+            "id_name": "nifedipino_20mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 81,
+        "fields": {
+            "name": "Nistatina 100.000UI/4g (creme vaginal)",
+            "id_name": "nistatina_100000ui4g_creme_vaginal",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 82,
+        "fields": {
+            "name": "Nistatina 100.000UI/ml (suspensão)",
+            "id_name": "nistatina_100000uiml_suspensao",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 83,
+        "fields": {
+            "name": "Nitrofurantoína 100mg",
+            "id_name": "nitrofurantoina_100mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 84,
+        "fields": {
+            "name": "Noretisterona 50mg/ml + Estradiol 5mg/ml (Noregyna – injetável)",
+            "id_name": "noretisterona_50mgml__estradiol_5mgml_noregyna_injetavel",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 85,
+        "fields": {
+            "name": "Nortriptilina  cloridrato 75mg",
+            "id_name": "nortriptilina_cloridrato_75mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 86,
+        "fields": {
+            "name": "Óleo mineral 100%",
+            "id_name": "oleo_mineral_100",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 87,
+        "fields": {
+            "name": "Omeprazol 20mg",
+            "id_name": "omeprazol_20mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 88,
+        "fields": {
+            "name": "Paracetamol 500mg",
+            "id_name": "paracetamol_500mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 89,
+        "fields": {
+            "name": "Permetrina 5% (loção)",
+            "id_name": "permetrina_5_locao",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 90,
+        "fields": {
+            "name": "Prednisona 20mg",
+            "id_name": "prednisona_20mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 91,
+        "fields": {
+            "name": "Prednisona 5mg",
+            "id_name": "prednisona_5mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 92,
+        "fields": {
+            "name": "Prometazina  cloridrato 25mg",
+            "id_name": "prometazina_cloridrato_25mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 93,
+        "fields": {
+            "name": "Propranolol 40mg",
+            "id_name": "propranolol_40mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 94,
+        "fields": {
+            "name": "Sais para reidratação oral",
+            "id_name": "sais_para_reidratacao_oral",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 95,
+        "fields": {
+            "name": "Salbutamol  sulfato 100mcg/dose (aerossol)",
+            "id_name": "salbutamol_sulfato_100mcgdose_aerossol",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 96,
+        "fields": {
+            "name": "Simeticona 75mg/ml (gotas)",
+            "id_name": "simeticona_75mgml_gotas",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 97,
+        "fields": {
+            "name": "Sinvastatina 20mg",
+            "id_name": "sinvastatina_20mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 98,
+        "fields": {
+            "name": "Sinvastatina 40mg",
+            "id_name": "sinvastatina_40mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 99,
+        "fields": {
+            "name": "Sulfametoxazol 200mg/5ml + Trimetoprima 40mg/5ml (suspensão)",
+            "id_name": "sulfametoxazol_200mg5ml__trimetoprima_40mg5ml_suspensao",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 100,
+        "fields": {
+            "name": "Sulfametoxazol 400mg + Trimetoprima 80mg",
+            "id_name": "sulfametoxazol_400mg__trimetoprima_80mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 101,
+        "fields": {
+            "name": "Sulfato ferroso 40mg",
+            "id_name": "sulfato_ferroso_40mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 102,
+        "fields": {
+            "name": "Timolol 0 5% (colírio)",
+            "id_name": "timolol_0_5_colirio",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 103,
+        "fields": {
+            "name": "Travoprosta 0 04mg/ml (colírio)",
+            "id_name": "travoprosta_0_04mgml_colirio",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 104,
+        "fields": {
+            "name": "Verapamil  cloridrato 80mg",
+            "id_name": "verapamil_cloridrato_80mg",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    },
+    {
+        "model": "drugstore.medicineregister",
+        "pk": 105,
+        "fields": {
+            "name": "Paracetamol 200mg/ml (gotas)",
+            "id_name": "paracetamol_200mgml_gotas",
+            "created_at": "2022-06-23",
+            "updated_at": "2022-06-23",
+            "category": ""
+        }
+    }
+]
