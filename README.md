@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Drugstores" title="Drugstores" src="setup/static/images/logo.svg" width="100px" />
+    <img alt="Drugstores" title="Drugstores" src="backend/setup/static/images/logo.svg" width="100px" />
 </h1>
 
 <h2 align="center">
