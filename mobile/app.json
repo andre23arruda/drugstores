@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash-2.png",
+      "image": "./assets/splash-4.png",
       "resizeMode": "contain",
       "backgroundColor": "#3186cc"
     },
@@ -24,7 +24,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#3186cc"
       },
-      "package": "com.andre23arruda.pokedex"
+      "package": "com.andre23arruda.drugstores"
     },
     "web": {
       "favicon": "./assets/favicon.png"
