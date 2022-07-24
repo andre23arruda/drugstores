@@ -7,7 +7,7 @@ from .serializers import DrugstoreSerializer, MedicineSerializer
 class DrugstoresViewSet(viewsets.ModelViewSet):
     '''API endpoint that allows Drugstores to be viewed'''
     http_method_names = ['get']
-    queryset = Drugstore.objects.all()
+    queryset = Drugstore.objects.filter(is_active=True).order_by('name')
     serializer_class = DrugstoreSerializer
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
     ordering_fields = ['name']
@@ -18,10 +18,10 @@ class DrugstoresViewSet(viewsets.ModelViewSet):
 class MedicinesViewSet(viewsets.ModelViewSet):
     '''API endpoint that allows Medicines to be viewed'''
     http_method_names = ['get']
-    queryset = Medicine.objects.all()
+    queryset = Medicine.objects.all().order_by('medicine__id_name')
     serializer_class = MedicineSerializer
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
-    ordering_fields = ['name']
+    ordering_fields = ['medicine__id_name']
     filterset_fields = ['drugstore', 'medicine__category']
     pagination_class = None
-    search_fields = ['name', 'category']
+    search_fields = ['medicine__name', 'medicine__category']

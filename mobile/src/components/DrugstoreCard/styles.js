@@ -24,4 +24,20 @@ export default StyleSheet.create({
         fontSize: 15,
         textAlign: 'left',
     },
+
+    phoneContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginVertical: 5,
+    },
+
+    buttonContainer: {
+        marginLeft: 15,
+        marginBottom: 5,
+
+    },
+
+    buttonPhone: {
+        padding: 3,
+    }
 })

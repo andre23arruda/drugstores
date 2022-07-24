@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import { TouchableOpacity } from 'react-native'
+import React from 'react'
+import { Linking, TouchableOpacity, View } from 'react-native'
 import { useNavigation } from '@react-navigation/core'
+import FontAwesome from '@expo/vector-icons/FontAwesome'
 
 // custom components
 import CustomText from '../CustomText'
@@ -14,13 +15,16 @@ import styles from './styles'
 
 
 function DrugstoreCard({ drugstore }) {
-
     const navigation = useNavigation()
 
+    function pressCall(phoneNumber) {
+        const url = `tel://${ phoneNumber }`
+        Linking.openURL(url)
+    }
 
     async function seeMedicines() {
         const { data, status } = await getApi(`api/medicines?drugstore=${ drugstore.id }`)
-        console.log(status)
+        // console.log(status)
 
         try {
             if (status === 200) {
@@ -49,9 +53,29 @@ function DrugstoreCard({ drugstore }) {
                 Endereço: { drugstore.address }
             </CustomText>
 
+            <View style={ styles.phoneContainer }>
+                <CustomText style={ styles.description }>
+                    Telefone: { drugstore.phone }
+                </CustomText>
+
+                <View style={ styles.buttonContainer }>
+                    <FontAwesome.Button
+                        name="phone"
+                        size={ 18 }
+                        iconStyle={{ marginRight: 2, marginLeft: 2, marginTop: 0, marginBottom: 0 }}
+                        style={ styles.buttonPhone }
+                        onPress={ () => pressCall(drugstore.phone) }
+                    />
+                </View>
+
+            </View>
+
+
             <CustomText style={ styles.description }>
                 Medicamentos em estoque: { drugstore.stock }
             </CustomText>
+
+
         </TouchableOpacity>
 	)
 }

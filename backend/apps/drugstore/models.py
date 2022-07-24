@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from utils.text_utils import text_to_id
 
@@ -45,6 +45,7 @@ class Drugstore(models.Model):
     updated_at = models.DateField(auto_now=True, verbose_name=_('Updated at'))
     name = models.CharField(max_length=50, verbose_name=_('Name'))
     address = models.TextField(blank=True, verbose_name=_('Address'))
+    phone = models.CharField(max_length=20, default='(12) 123456789', verbose_name=_('Phone'))
     users = models.ManyToManyField(User, related_name='drugstores', null=True, verbose_name=_('Users'))
     is_active = models.BooleanField(default=True, verbose_name=_('Is active'))
 

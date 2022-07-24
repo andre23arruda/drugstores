@@ -28,10 +28,11 @@ class MedicineRegisterAdmin(admin.ModelAdmin):
 @admin.register(Drugstore)
 class DrugstoreAdmin(admin.ModelAdmin):
     autocomplete_fields = ['users']
-    list_display = ['id', 'name', 'created_at']
-    list_display_links = ['id', 'name']
+    list_display = ['name', 'phone', 'created_at', 'is_active']
+    list_display_links = ['name', 'phone']
     list_filter = ['is_active']
     list_per_page = 25
+    ordering = ['name']
     search_fields = ['name']
 
 
@@ -49,15 +50,19 @@ class MedicineAdmin(admin.ModelAdmin):
             list_filter.append('drugstore')
         return list_filter
 
+    def message_user(self, *args): # overridden method
+        pass
+
     def save_model(self, request, obj, form, change):
         user = request.user
-        if user.is_superuser:
-            obj.save()
-        elif user in obj.drugstore.users:
-            obj.save()
+        if Medicine.objects.filter(medicine=obj.medicine, drugstore=obj.drugstore).exists():
+            messages.add_message(request, messages.WARNING, 'This medicine already exists!')
         else:
-            messages.add_message(request, messages.ERROR, 'You can not make this change!')
-
+            if user.is_superuser or user in obj.drugstore.users:
+                obj.save()
+                messages.add_message(request, messages.SUCCESS, f'{ obj.medicine.name } added to { obj.drugstore.name } successfully!')
+            else:
+                messages.add_message(request, messages.ERROR, 'You can not make this change!')
 
     list_display = ['medicine', 'category', 'drugstore', 'in_stock']
     list_display_links = ['medicine', 'category']
@@ -65,7 +70,7 @@ class MedicineAdmin(admin.ModelAdmin):
     list_filter = ['medicine__category']
     list_per_page = 105
     ordering = ['drugstore', 'medicine__id_name']
-    search_fields = ['medicine__name', 'medicine__category']
+    search_fields = ['medicine__name', 'medicine__id_name', 'medicine__category']
 
     def category(self, obj):
         return obj.medicine.category

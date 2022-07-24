@@ -18,4 +18,4 @@ class DrugstoreSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Drugstore
-        fields = ['id', 'name', 'address', 'stock']
+        fields = ['id', 'name', 'address', 'phone', 'stock']

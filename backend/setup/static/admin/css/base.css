@@ -1026,6 +1026,13 @@ table#change-history tbody th {
     transition: none;
 }
 
+#nav-filter {
+    width: 90% !important;
+    padding: 10px !important;
+    margin: 25px 5% !important;
+    border-radius: 5px !important;
+}
+
 #content-related {
     background: var(--darkened-bg);
 }
