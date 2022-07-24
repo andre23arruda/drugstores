@@ -1,0 +1,16 @@
+{% extends "./rest_framework/base.html" %}
+
+{% load static %}
+
+{% block style %}
+    {{ block.super }}
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+
+    {% include './api_style.html' %}
+{% endblock %}
+
+{% block branding %}
+    <a href='/api'>
+        <img src="{% static 'images/django.svg' %}" width="50" alt="Django Icon" style="padding: 10px;">
+    </a>
+{% endblock %}

@@ -41,6 +41,9 @@
                         <strong>{% firstof user.get_short_name user.get_username %}</strong>.
                     {% endblock %}
                     {% block userlinks %}
+                        {% if user.is_superuser %}
+                            <a href="/api/" target="_blank">{% translate 'API' %}</a> /
+                        {% endif %}
                         {% if site_url %}
                             <a href="{{ site_url }}">{% translate 'View site' %}</a> /
                         {% endif %}
@@ -102,5 +105,6 @@
         </div>
         <!-- END Container -->
         <script src="{% static 'js/dark-mode.js' %}"></script>
+        <script src="{% static 'admin/js/hide-navbar.js' %}"></script>
     </body>
 </html>
