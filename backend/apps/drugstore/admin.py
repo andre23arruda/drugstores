@@ -55,7 +55,9 @@ class MedicineAdmin(admin.ModelAdmin):
 
     def save_model(self, request, obj, form, change):
         user = request.user
-        if Medicine.objects.filter(medicine=obj.medicine, drugstore=obj.drugstore).exists():
+        medicine_exists = Medicine.objects.filter(medicine=obj.medicine, drugstore=obj.drugstore).exists()
+        created = not change
+        if medicine_exists and created:
             messages.add_message(request, messages.WARNING, 'This medicine already exists!')
         else:
             if user.is_superuser or user in obj.drugstore.users:

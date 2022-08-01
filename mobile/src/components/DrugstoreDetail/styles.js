@@ -29,10 +29,9 @@ export default StyleSheet.create({
     searchIcon: {
         position: 'absolute',
         right: 10,
+        top: '20%',
         color: colors.dark,
         textAlign: 'center',
-        textAlignVertical: 'center',
-        height: '100%',
     },
 
     noMedicines: {
