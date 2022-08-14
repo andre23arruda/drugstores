@@ -1,4 +1,4 @@
-const BASE_URL = `http://192.168.1.10:8000/`
+const BASE_URL = process.env.REACT_APP_API_URL
 
 export async function getApi(route) {
     return fetch(BASE_URL + route)

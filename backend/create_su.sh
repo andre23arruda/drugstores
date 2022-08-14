@@ -15,13 +15,13 @@ create_su () {
 
 	printf "\n Virtual enviroment activated. \n\n Use 'deactivate' to close it. \n"
 
-	echo "from django.contrib.auth.models import User; User.objects.create_superuser('teste', 'teste@example.com', 'teste1234')" | python manage.py shell
+	echo "from django.contrib.auth.models import User; User.objects.create_superuser('dev', 'dev@email.com', '123')" | python manage.py shell
 
 	printf "\n User created successfully!!"
 
-	printf "\n User: teste"
+	printf "\n User: dev"
 
-	printf "\n Password: teste1234 \n\n"
+	printf "\n Password: 123 \n\n"
 
 }
 

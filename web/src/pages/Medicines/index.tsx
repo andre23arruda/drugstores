@@ -1,13 +1,19 @@
 import { useEffect, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 
+// custom components
 import Header from 'components/Header'
 import Loading from 'components/Loading'
 import MedicineCard from 'components/MedicineCard'
 import NotFound from 'pages/NotFound'
-import { MedicineProps } from 'types/Medicine'
+
+// utils
 import { getApi } from 'services/api'
 
+// types
+import { MedicineProps, MedicinesListProps } from 'types/Medicine'
+
+// styles
 import styles from './Medicines.module.scss'
 
 function stringNormalize(text: string) {
@@ -17,7 +23,6 @@ function stringNormalize(text: string) {
 
 export default function Medicines() {
     const [medicines, setMedicines] = useState<MedicineProps[]>([])
-    const [filteredMedicines, setFilteredMedicines] = useState<MedicineProps[]>([])
     const [drugstore, setDrugstore] = useState<any>(null)
     const [loading, setLoading] = useState(true)
     const [searchText, setSearchText] = useState('')
@@ -26,16 +31,11 @@ export default function Medicines() {
     const { state } = useLocation()
 
     function filterMedicines(newSearchText: string) {
-        setSearchText(newSearchText)
-        if (newSearchText) {
-            const currentMedicines = medicines.filter(
-                medicine => stringNormalize(medicine.name).includes(stringNormalize(newSearchText))
-            )
-            setFilteredMedicines(currentMedicines)
-        } else {
-            setFilteredMedicines(medicines)
-        }
-        window.scrollTo(0, 0)
+        setSearchText(newSearchText.trim())
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
     }
 
     useEffect(() => {
@@ -53,14 +53,31 @@ export default function Medicines() {
             const { data, status } = await getApi(`api/medicines?drugstore=${ id }`)
             if (status === 200) {
                 setMedicines(data)
-                setFilteredMedicines(data)
                 loadDrugstore()
             }
         }
 
         loadMedicines()
-        console.group(loading)
     }, [id, state])
+
+    const filteredMedicines: MedicineProps[] = searchText.length > 0
+        ? medicines.filter(
+            medicine => stringNormalize(medicine.name).includes(stringNormalize(searchText))
+        ) : []
+
+    function CardsList({ list }: MedicinesListProps) {
+        return (
+            <>
+                { list.map(medicine => (
+                    <MedicineCard
+                        key={ medicine.id }
+                        {...medicine}
+                        drugstore={ drugstore }
+                    />
+                ))}
+            </>
+        )
+    }
 
     if (!drugstore && !loading ) {
         return (
@@ -82,18 +99,16 @@ export default function Medicines() {
                     <Loading />
                 ) : (
                     <>
-                        { filteredMedicines.length ? (
-                            <>
-                                { filteredMedicines.map(medicine => (
-                                    <MedicineCard
-                                        key={ medicine.id }
-                                        {...medicine}
-                                        drugstore={ drugstore }
-                                    />
-                                ))}
-                            </>
+                        { !searchText.length ? (
+                            <CardsList list={ medicines } />
                         ) : (
-                            <h1>Não há medicamentos com esse nome...</h1>
+                            <>
+                                { !filteredMedicines.length ? (
+                                    <h1>Não há medicamentos com esse nome...</h1>
+                                ) : (
+                                    <CardsList list={ filteredMedicines } />
+                                )}
+                            </>
                         )}
                     </>
                 )}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FlatList, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { FlatList, TextInput, View } from 'react-native'
 import { Feather } from '@expo/vector-icons'
 import { useRoute } from '@react-navigation/core'
 
@@ -22,20 +22,16 @@ function stringNormalize(text) {
 function DrugstoreDetail() {
     const route = useRoute()
     const { medicines } = route.params
-    const [filteredMedicines, setFilteredMedicines] = useState(medicines)
     const [searchText, setSearchText] = useState('')
 
     function filterMedicines(newSearchText) {
-        setSearchText(newSearchText)
-        if (newSearchText) {
-            const currentMedicines = medicines.filter(
-                medicine => stringNormalize(medicine.name).includes(stringNormalize(newSearchText))
-            )
-            setFilteredMedicines(currentMedicines)
-        } else {
-            setFilteredMedicines(medicines)
-        }
+        setSearchText(newSearchText.trim())
     }
+
+    const filteredMedicines = searchText.length > 0
+        ? medicines.filter(
+            medicine => stringNormalize(medicine.name).includes(stringNormalize(searchText))
+        ) : []
 
 	return (
         <MainScreen backgroundColor={ colors.default }>
@@ -57,10 +53,10 @@ function DrugstoreDetail() {
                 />
             </View>
 
-            { filteredMedicines.length ? (
+            { !searchText.length ? (
                 <FlatList
                     contentContainerStyle={ styles.medicinesList }
-                    data={ filteredMedicines }
+                    data={ medicines }
                     keyExtractor={ item => String(item.id) }
                     numColumns={ 1 }
                     removeClippedSubviews={ true }
@@ -68,13 +64,26 @@ function DrugstoreDetail() {
                     showsVerticalScrollIndicator={ false }
                 />
             ) : (
-                <View style={ styles.noMedicines }>
-                    <CustomText style={ styles.noMedicinesText }>
-                        Não há medicamentos com esse nome...
-                    </CustomText>
-                </View>
+                <>
+                    { !filteredMedicines.length ? (
+                        <View style={ styles.noMedicines }>
+                            <CustomText style={ styles.noMedicinesText }>
+                                Não há medicamentos com esse nome...
+                            </CustomText>
+                        </View>
+                    ) : (
+                        <FlatList
+                            contentContainerStyle={ styles.medicinesList }
+                            data={ filteredMedicines }
+                            keyExtractor={ item => String(item.id) }
+                            numColumns={ 1 }
+                            removeClippedSubviews={ true }
+                            renderItem={ ({ item }) => <MedicineCard medicine={ item } /> }
+                            showsVerticalScrollIndicator={ false }
+                        />
+                    )}
+                </>
             )}
-
         </MainScreen>
 	)
 }

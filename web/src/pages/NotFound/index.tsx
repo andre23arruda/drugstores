@@ -8,9 +8,9 @@ export default function NotFound() {
             <div className={ styles.err }>404</div>
 
             <div className={ styles.msg }>
-                Maybe this page moved or got deleted?
+                Oops, parece que essa página não existe!
                 <p>
-                    Let's go <Link to="/">home</Link> and try from there.
+                    Deseja <Link to="/">voltar</Link>?
                 </p>
             </div>
         </div>

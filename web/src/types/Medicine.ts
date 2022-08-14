@@ -6,3 +6,7 @@ export type MedicineProps = {
 	in_stock: boolean,
 	drugstore: DrugstoreProps,
 }
+
+export type MedicinesListProps = {
+	list: MedicineProps[],
+}
