@@ -1,0 +1,79 @@
+:root {
+    --lightgray: #a3a3a3;
+    --gray-less-opacity: #c1c1c169;
+    --blue-white: #d9f8ff;
+}
+
+.sidebar {
+    overflow-y: auto;
+}
+
+.user-panel {
+    align-items: center;
+}
+
+.user-profile {
+    margin-left: 0.4rem;
+    font-size: 1.4rem;
+}
+
+.alert a {
+    color: var(--blue-white) !important;
+}
+
+.main-footer {
+    text-align: center;
+}
+
+#changelist-form td,
+#changelist-form th {
+    max-width: 200px;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.select2-selection.select2-selection--multiple .select2-selection__rendered {
+    border: 1px solid var(--lightgray);
+    border-radius: 4px;
+}
+
+.jsoneditor {
+    border: 1px solid var(--gray-less-opacity) !important;
+}
+
+.jsoneditor-poweredBy {
+    display: none !important;
+}
+
+.jsoneditor-menu>button.jsoneditor-sort {
+    background-position: -97px -72px !important;
+}
+
+.jsoneditor-menu>button.jsoneditor-transform {
+    background-position: -50px -72px !important;
+}
+
+.dark-mode .jsoneditor-menu {
+    background-color: var(--gray-dark);
+}
+
+.dark-mode .related-widget-wrapper select,
+.dark-mode .jsoneditor-menu button:disabled {
+    background-color: var(--lightgray);
+}
+
+.dark-mode .select2-results__option:not(.select2-results__option--selected) {
+    color: var(--lightgray);
+}
+
+.dark-mode #jazzy-actions .btn:hover {
+    filter: brightness(1.3);
+    transition: 0.2s;
+}

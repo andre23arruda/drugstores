@@ -26,7 +26,7 @@ class MedicineRegister(models.Model):
     updated_at = models.DateField(auto_now=True, verbose_name=_('Updated at'))
     name = models.CharField(max_length=50, verbose_name=_('Name'))
     id_name = models.CharField(max_length=50, default='', blank=True, verbose_name=_('ID name'))
-    category = models.CharField(max_length=50, choices=TAGS, blank=True, default='Comprimido')
+    category = models.CharField(max_length=50, choices=TAGS, blank=True, default='Comprimido', verbose_name=_('Category'))
 
     class Meta:
         verbose_name = _('Register medicine')
@@ -60,7 +60,7 @@ class Drugstore(models.Model):
 class Medicine(models.Model):
     created_at = models.DateField(auto_now_add=True, verbose_name=_('Created at'))
     updated_at = models.DateField(auto_now=True, verbose_name=_('Updated at'))
-    medicine = models.ForeignKey(MedicineRegister, on_delete=models.CASCADE, verbose_name=_('Medicine register'))
+    medicine = models.ForeignKey(MedicineRegister, on_delete=models.CASCADE, verbose_name=_('Name'))
     drugstore = models.ForeignKey(Drugstore, related_name='medicines', on_delete=models.CASCADE, verbose_name=_('Drugstore'))
     in_stock = models.BooleanField(default=True, verbose_name=_('In stock'))
 

@@ -2,16 +2,14 @@
 
 {% load static %}
 
-{% block extrahead %}
-    <!-- <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" /> -->
-    <link rel="shortcut icon" href="{% static 'images/logo.svg' %}" />
-    {% endblock %}
+{% block bodyclass_script %}
+    <script src="{% static 'js/dark-mode-init.js' %}"></script>
+{% endblock %}
 
-    {% block branding %}
-    <h1 id="site-name">
-        <a href="{% url 'admin:index' %}">
-        <img src="{% static 'images/logo.svg' %}" width="60" alt="App logo">
-    </a>
-</h1>
+{% block darkmode_element %}
+    <script src="{% static 'js/dark-mode-element.js' %}"></script>
+{% endblock %}
 
+{% block extrajs %}
+    <script src="{% static 'js/dark-mode.js' %}"></script>
 {% endblock %}

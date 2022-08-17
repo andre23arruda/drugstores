@@ -1,12 +1,14 @@
 from django.contrib import admin, messages
-
+from django.contrib.admin.models import LogEntry
 from django.conf.locale.pt_BR import formats as portuguese
 from django.conf.locale.en import formats as english
 from .models import MedicineRegister, Drugstore, Medicine
 
 
 portuguese.DATE_FORMAT = 'd/m/Y'
+portuguese.DATETIME_FORMAT = 'H:i:s d/m/Y'
 english.DATE_FORMAT = 'd/m/Y'
+english.DATETIME_FORMAT = 'H:i:s d/m/Y'
 
 @admin.register(MedicineRegister)
 class MedicineRegisterAdmin(admin.ModelAdmin):
@@ -76,3 +78,19 @@ class MedicineAdmin(admin.ModelAdmin):
 
     def category(self, obj):
         return obj.medicine.category
+
+
+@admin.register(LogEntry)
+class MoniterLog(admin.ModelAdmin):
+    list_display = ('action_time','user','content_type','object_repr','change_message','action_flag')
+    list_filter = ['action_time','user','content_type']
+    ordering = ('-action_time',)
+
+    def has_add_permission(self, request):
+        return False
+    def has_change_permission(self, request, obj=None):
+        return False
+    def has_delete_permission(self, request, obj=None):
+        return False
+    def has_view_permission(self, request, obj=None):
+        return request.user.is_superuser
