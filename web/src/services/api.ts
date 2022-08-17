@@ -1,6 +1,6 @@
 const BASE_URL = process.env.REACT_APP_API_URL
 
-export async function getApi(route) {
+export async function getApi(route: string) {
     return fetch(BASE_URL + route)
     .then(response => response.json()
         .then(data => ({
