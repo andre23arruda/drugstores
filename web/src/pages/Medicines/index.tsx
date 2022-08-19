@@ -51,7 +51,10 @@ export default function Medicines() {
 
         async function loadMedicines() {
             const { data, status } = await getApi(`api/medicines?drugstore=${ id }`)
-            if (status === 200) {
+            if (status >= 400) {
+                setLoading(false)
+                return
+            } else {
                 setMedicines(data)
                 loadDrugstore()
             }
