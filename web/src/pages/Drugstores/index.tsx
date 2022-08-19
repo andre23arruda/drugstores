@@ -16,7 +16,7 @@ export default function Drugstores() {
         async function loadMedicines() {
             const { data } = await getApi(`api/drugstores`)
             setDrugstores(data)
-            setLoading(false)
+            // setLoading(false)
         }
         loadMedicines()
     }, [])
