@@ -1,0 +1,35 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/breakpoints';
+
+.drugstoresPage {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
+
+    main {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    button {
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+
+    @media (max-width: 768px) {
+        main {
+            padding-top: 120px;
+        }
+    }
+}

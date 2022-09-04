@@ -17,12 +17,13 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Django](https://www.djangoproject.com/)
 - [Django-Rest-Framework](https://www.django-rest-framework.org/)
+- [Next.js](https://nextjs.org/)
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.io/)
 
 
 ## 💻 Projeto
-**Projeto para cadastrar medicamentos e farmácias**
+**Projeto para cadastrar medicamentos, farmácias e colaboradores**
 
 
 ## Instalação
@@ -72,12 +73,27 @@ python manage.py loaddata medicines groups
 . run.sh
 ```
 
+### Web
+```sh
+# Entrar na pasta
+cd web_next
+
+# Renomear .env_example para .env
+cp .env_example.local .env.local
+
+# Instalar os pacotes do projeto
+yarn install
+
+# Rodar
+yarn start
+```
+
 ### Mobile
 ```sh
 # Entrar na pasta
 cd mobile
 
-# Renom# Instalar os pacotes do projeto
+# Instalar os pacotes do projeto
 yarn install
 
 # Rodar

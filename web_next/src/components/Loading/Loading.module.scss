@@ -1,0 +1,11 @@
+.loading {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+
+    img {
+        max-width: 120px;
+    }
+}

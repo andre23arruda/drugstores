@@ -1,0 +1,35 @@
+.footer {
+    width: 100%;
+    margin: auto auto 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #005eb0;
+    position: absolute;
+    bottom: 0;
+    color: white;
+
+    .author {
+        transition: 0.2s;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+
+        svg {
+            transition: 0.2s;
+        }
+
+        &:hover * {
+            transform: translateY(-3px);
+        }
+    }
+}

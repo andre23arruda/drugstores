@@ -1,0 +1,34 @@
+{
+  "name": "a1.3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/css-modules": "^1.0.2",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.11.27",
+    "@types/react": "^18.0.6",
+    "@types/react-dom": "^18.0.2",
+    "next": "^12.0.8",
+    "normalize.css": "^8.0.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "sass": "^1.54.8",
+    "typescript-plugin-css-modules": "^3.4.0"
+  }
+}

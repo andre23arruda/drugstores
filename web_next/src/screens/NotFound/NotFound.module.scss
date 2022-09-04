@@ -1,0 +1,39 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/breakpoints';
+
+
+.NotFound {
+    margin: auto;
+    height: 100vh;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .err {
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 11rem;
+        text-align: center;
+    }
+
+    .msg {
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.6rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        transition: 0.4s;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            border-color: white;
+        //     box-shadow: 0 3px 0 white;
+        }
+    }
+
+}
