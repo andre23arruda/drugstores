@@ -12,10 +12,21 @@
     transition: 0.1s;
     color: black;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     cursor: pointer;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    span {
+        color: $gray;
+    }
+
 
     &:hover {
         filter: brightness(0.95);
