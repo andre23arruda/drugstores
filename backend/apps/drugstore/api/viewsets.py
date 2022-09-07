@@ -1,4 +1,4 @@
-from rest_framework import viewsets, filters
+from rest_framework import authentication, filters, permissions, viewsets
 from django_filters.rest_framework import DjangoFilterBackend
 from drugstore.models import Drugstore, Medicine
 from .serializers import DrugstoreSerializer, MedicineSerializer
@@ -6,6 +6,8 @@ from .serializers import DrugstoreSerializer, MedicineSerializer
 
 class DrugstoresViewSet(viewsets.ModelViewSet):
     '''API endpoint that allows Drugstores to be viewed'''
+    authentication_classes = [authentication.TokenAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
     http_method_names = ['get']
     queryset = Drugstore.objects.filter(is_active=True).order_by('name')
     serializer_class = DrugstoreSerializer
@@ -17,6 +19,8 @@ class DrugstoresViewSet(viewsets.ModelViewSet):
 
 class MedicinesViewSet(viewsets.ModelViewSet):
     '''API endpoint that allows Medicines to be viewed'''
+    authentication_classes = [authentication.TokenAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
     http_method_names = ['get']
     queryset = Medicine.objects.all().order_by('medicine__id_name')
     serializer_class = MedicineSerializer

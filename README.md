@@ -66,6 +66,10 @@ python manage.py migrate
 # username -> teste
 # password -> teste1234
 
+# Criar usuário client com token
+. create_client.sh
+# guarde o tokken gerado
+
 # Carregar fixtures (exemplo para colocar no banco de dados)
 python manage.py loaddata medicines groups
 
@@ -80,6 +84,7 @@ cd web_next
 
 # Renomear .env_example para .env
 cp .env_example.local .env.local
+# adicione o token gerado
 
 # Instalar os pacotes do projeto
 yarn install
@@ -95,6 +100,8 @@ cd mobile
 
 # Instalar os pacotes do projeto
 yarn install
+
+# Adicione o token gerado em config.js
 
 # Rodar
 expo start

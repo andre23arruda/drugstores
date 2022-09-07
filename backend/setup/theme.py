@@ -25,6 +25,7 @@ JAZZMIN_SETTINGS = {
         'drugstore.Medicine': 'fas fa-pills',
         'drugstore.MedicineRegister': 'fas fa-edit',
         'admin.LogEntry': 'fas fa-dolly',
+        'authtoken.TokenProxy': 'fas fa-mask',
     },
     'default_icon_parents': 'fas fa-chevron-circle-right',
     'default_icon_children': 'fas fa-circle',

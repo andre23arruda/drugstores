@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     # third party apps
     'django_filters',
     'rest_framework',
+    'rest_framework.authtoken',
     'corsheaders',
     # project apps
     'drugstore',

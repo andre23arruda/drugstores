@@ -15,8 +15,8 @@ run () {
 
 	printf "\n Virtual enviroment activated. \n\n Use 'deactivate' to close it. \n\n"
 
-	# python manage.py runserver
-	python runserver.py
+	python manage.py runserver
+	# python runserver.py
 }
 
 run
