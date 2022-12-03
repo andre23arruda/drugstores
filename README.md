@@ -24,7 +24,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 **Projeto para cadastrar medicamentos, farmácias e colaboradores**
-
+<div align="center">
+    <img alt="models" title="models" src=".github/drugstore.png" width="300px" />
+</div>
 
 ## Instalação
 ### Pré requisitos

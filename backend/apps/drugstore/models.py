@@ -29,7 +29,7 @@ class MedicineRegister(models.Model):
     category = models.CharField(max_length=50, choices=TAGS, blank=True, default='Comprimido', verbose_name=_('Category'))
 
     class Meta:
-        verbose_name = _('Register medicine')
+        verbose_name = _('Medicine')
         verbose_name_plural = _('Register medicines')
 
     def save(self, *args, **kwargs):
@@ -66,7 +66,7 @@ class Medicine(models.Model):
 
     class Meta:
         verbose_name = _('Medicine')
-        verbose_name_plural = _('Medicines')
+        verbose_name_plural = _('Medicines in Drugstore')
 
     def __str__(self):
         return f'{ self.drugstore.name } - { self.medicine.name }'
