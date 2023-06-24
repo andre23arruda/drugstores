@@ -1,5 +1,5 @@
 #!/bin/bash
-# run with `. create_su.sh`
+# run with `. create_su`
 PWD=`pwd`
 
 create_su () {

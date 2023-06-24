@@ -18,13 +18,8 @@ class MedicineRegisterAdmin(admin.ModelAdmin):
     list_filter = ['category']
     list_per_page = 25
     ordering = ['id_name']
-    search_fields = ['name', 'category']
-
-    # def raw_name(self, obj):
-    #     import unicodedata
-    #     nfkd_form = unicodedata.normalize('NFKD', obj.name)
-    #     return (nfkd_form.encode('ASCII', 'ignore')).decode("utf-8")
-    # raw_name.short_description = 'Raw name'
+    # prepopulated_fields = {'id_name': ('name',)}
+    search_fields = ['name', 'id_name', 'category']
 
 
 @admin.register(Drugstore)

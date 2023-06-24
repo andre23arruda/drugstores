@@ -1,5 +1,5 @@
 #!/bin/bash
-# run with `. activate.sh`
+# run with `. activate`
 PWD=`pwd`
 
 activate () {

@@ -3,6 +3,7 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.utils.translation import gettext_lazy as _
+from django.template.defaultfilters import slugify
 
 from utils.text_utils import text_to_id
 
@@ -33,7 +34,8 @@ class MedicineRegister(models.Model):
         verbose_name_plural = _('Register medicines')
 
     def save(self, *args, **kwargs):
-        self.id_name = text_to_id(self.name)
+        # self.id_name = text_to_id(self.name)
+        self.id_name = slugify(self.name)
         super(MedicineRegister, self).save(*args, **kwargs)
 
     def __str__(self):
